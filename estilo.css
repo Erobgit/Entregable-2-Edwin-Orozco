@@ -1,11 +1,11 @@
 body{
     background-image: url('./IMG/fondo.jpg');
     background-size: cover;
-    background-repeat: no-repeat;  /* Evita que se repita */
-    background-position: center;   /* Centra la imagen */
-    background-attachment: fixed;   /* Opcional: fija el fondo mientras haces scroll */
-    min-height: 100vh;              /* Al menos la altura completa del viewport */
-    margin: 0;                      /* Elimina márgenes por defecto */
+    background-repeat: no-repeat;  
+    background-position: center;   
+    background-attachment: fixed;   
+    min-height: 100vh;              
+    margin: 0;                    
     padding: 0;
  }
 
@@ -15,6 +15,18 @@ body{
     font-family: "Times New Roman", Times, serif; 
  }
 
+.nav-linkactive{
+  background-color:transparent;
+  color:#000000;
+  margin: 5px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  
+}
+
+.nav-linkactive:hover{
+  color: #2ca5fc;
+}
  .redes-fijas {
     position: fixed;
     top: 40%;
@@ -29,10 +41,10 @@ body{
   
   
   .redes-fijas a i {
-    font-size: 40px; /* O el tamaño que prefieras */
+    font-size: 40px; 
     color: white;
     transition: transform 0.3s ease;
-    filter: drop-shadow(0 0 2px black); /* Opcional: resalta más el blanco */
+    filter: drop-shadow(0 0 2px black); 
   }
   
   .redes-fijas a i:hover {
@@ -48,19 +60,59 @@ body{
  }
 
  .d-block {
-    width: 450px; /* Cambia el porcentaje según el tamaño deseado */
-    margin: 0 auto; /* Centra la imagen */
+    width: 450px; 
+    margin: 0 auto; 
     object-fit: contain;
   }
 
 
  .contenedor-flex {
     display: flex;
-    justify-content: space-between; /* Espacio entre tarjetas */
+    justify-content: space-between; 
     align-items: flex-start;
-    gap: 30px; /* Espacio entre ellas */
+    gap: 30px; 
     padding: 40px;
+    
   }
+
+
+
+/* Tarjeta sin fondo y personalización */
+.card.historia {
+  background-color: transparent; 
+  border: none; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.historia .card-body {
+  color: #007bff; 
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem; 
+}
+
+.card.historia .card-title {
+  font-size: 2rem; 
+  font-family: "Times New Roman", Times, serif;
+  color: #007bff; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+.card.historia .card-subtitle {
+  font-size: 1.5rem; 
+  font-family: "Times New Roman", Times, serif;
+  color: #007bff; /* Azul Bootstrap */
+}
+
+.card.historia .card-text {
+  font-size: 1rem; /* Tamaño del texto de párrafo */
+  font-family: "Times New Roman", Times, serif;
+  color: #eceaf4; /* Color del texto del párrafo */
+}
   
   .card{
     width: 500px;
@@ -70,18 +122,7 @@ body{
     text-align: justify;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
   }
- 
- .card1{
-    color: rgb(251, 251, 251);
-    font-size: 11px;
-    width: 500px;
-    font-family: "Times New Roman", Times, serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Importante para centrar el texto dentro del contenedor */
- }
+
 
  .card-header::before{
         content: '🔧';
@@ -114,7 +155,7 @@ body{
     border-collapse: collapse;
     border: 4px double rgb(255, 255, 255);
     border-radius: 12px;
-    background-color: rgb(255, 255, 255); /* o el color que desees */
+    background-color: rgb(255, 255, 255); 
 
   }
   
@@ -142,7 +183,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 40px 0; /* Para que respire el contenido */
+    padding: 40px 0; 
     font-family: "Times New Roman", Times, serif;
   }
 
@@ -313,3 +354,424 @@ body{
     line-height: 1.5;
     font-family: "Times New Roman", Times, serif;
   }
+
+  /* Estilos para la Sección de Contacto */
+.col-lg-6:first-child {
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin-top: 50px; 
+  text-align: center; 
+}
+
+/* Estilo para el título h2 en la sección de contacto */
+.col-lg-6:first-child h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5 rem; 
+  color: #d2dd09; 
+  font-weight: bold;
+}
+
+.col-lg-6:first-child h5 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem; 
+  color: #d2dd09; 
+  font-weight: bold;
+}
+
+.col-lg-6:first-child p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem; 
+  color: #e0e0e5;
+  line-height: 1.5; 
+}
+
+.col-lg-6:first-child p i {
+  margin-right: 10px; 
+  font-size: 1.2rem; 
+}
+
+/* Evitar modificar el formulario */
+.col-lg-6:last-child .contacto-formulario {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem; 
+  color: #333; 
+}
+
+.texto-justificado {
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px; 
+  color: #ffffff; 
+}
+
+.titulo-principal {
+  color: #007bff; 
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitulo-seccion {
+  color: #007bff; 
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.imagen-nosotros {
+  font-family: "Times New Roman", Times, serif;
+  max-width: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+.nosotros {
+  font-family: "Times New Roman", Times, serif;
+  padding: 20px;
+}
+/* Establecemos un grid en el contenedor principal */
+.contenedor-video-iconos {
+  display: grid;
+  grid-template-columns: 7fr 5fr; 
+  gap: 20px; 
+  padding: 20px;
+  height: 100vh; 
+}
+/* Establecemos un grid en el contenedor principal */
+.contenedor-video-iconos {
+  display: grid;
+  grid-template-columns: 7fr 5fr; 
+  gap: 20px; 
+  padding: 20px;
+  height: 100vh; 
+}
+
+/* Video de fondo a la izquierda */
+.video-fondo {
+  position: relative;
+  height: 100%; 
+  overflow: hidden; 
+}
+
+.video-fondo video {
+  width: 100%; 
+  height: 82%; 
+  object-fit: cover;
+  border-radius: 15px; 
+}
+
+/* Contenedor de los iconos o tarjetas */
+.iconos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+}
+
+/* Estilo para las tarjetas */
+.card1, .card2 {
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+.card-header {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.card-body {
+  font-size: 1rem;
+}
+
+.card-body .btn {
+  margin-top: 10px;
+}
+
+
+/* Nosotros */
+/* Estilo para el título principal */
+.titulo-principal {
+  font-family: "Times New Roman", Times, serif;
+  color: #007bff; 
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+/* Para justificar el texto de los párrafos */
+.texto-justificado {
+  text-align: justify;
+}
+
+/* Estilos para la sección de servicios */
+.servicios {
+  font-family: "Times New Roman", Times, serif; 
+}
+
+.servicios h2 {
+  text-align: center; /* Centrar subtítulos */
+  font-family: "Times New Roman", Times, serif;
+  color: #daf00e; 
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 1.2rem; 
+}
+
+.servicios p {
+  text-align: justify; 
+  font-family: "Times New Roman", Times, serif;
+  color: #ffffff; 
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+}
+
+
+/* Elimina cualquier estilo de borde que meta Bootstrap */
+.menuServicios,
+.menuServicios .list-group-item {
+  border: none !important;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos para cada botón/ítem del menú */
+.menuServicios .list-group-item {
+  background-color: #F7F7F7;   
+  color: #210b9b;             
+  border-radius: 6px;         
+  margin-bottom: 8px;          
+  padding: 12px 20px;          
+  font-weight: 500;            
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Hover de ítems no activos */
+.menuServicios .list-group-item:hover {
+  background-color: #e8e8e8;
+  color: #333;
+}
+
+/* Ítem activo */
+.menuServicios .list-group-item.active {
+  background-color: #1e0ecf !important;  
+  color: #FFF !important;             
+}
+
+/* ----- Estilos para la sección de contenido dinámico ----- */
+.contenidoServicio {
+  padding: 1.5rem;
+  border: none !important;       
+  background: transparent !important; 
+}
+
+/* Títulos principales (h3) */
+.contenidoServicio h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.75rem;        
+  font-weight: bold;
+  color: #ecebf2;             
+  margin-bottom: 0.75rem;
+}
+
+/* Párrafos/subtítulos (p) */
+#contenidoServicio p {
+  font-family: Arial, sans-serif; 
+  font-size: 1rem;
+  color: #eaeaed;                   
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Listas (ul) */
+#contenidoServicio ul {
+  padding-left: 1.25rem;    
+  margin-bottom: 1.25rem;
+}
+
+/* Ítems de lista (li) */
+#contenidoServicio ul li {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #e9ebf4;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+/* Personalizar viñetas */
+#contenidoServicio ul li::marker {
+  color: #ebfb0c;           
+  font-size: 1.1rem;
+}
+
+/* Imágenes dentro del contenido */
+#contenidoServicio img {
+  display: block;
+  margin: 1rem auto 0;
+  max-width: 100px;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+
+
+/* Contenedor general */
+.Equipo {
+  padding: 2rem 0;
+}
+
+/* Imagen del equipo (logo encima del texto) */
+.Equipo .card-img-top:first-of-type {
+  width: 20%;
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+/* Títulos principales */
+.Equipo h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #beff0b;     
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Texto de apoyo debajo del primer título */
+.Equipo p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #ffffff;          
+  text-align: justify; 
+  text-justify: inter-word;
+  line-height: 1.6;
+  max-width: 800px;     
+  margin: 0 auto 1.5rem;
+}
+
+/* Imagen 24/7 centrada */
+.Equipo .card-img-top:nth-of-type(2) {
+  width: 20%;
+  display: block;
+  margin: 2rem auto 1rem;
+}
+
+/* Subtítulo “soporte 24/7” */
+.Equipo h2,h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  color: #d5f504;       
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Párrafo final */
+.Equipo p:last-of-type {
+  margin-bottom: 0;
+}
+
+.Gif {
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+
+}
+
+
+
+
+
+
+
+/* Tarjetas de producto */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* Título del producto */
+.card-title {
+  font-size: 1.2rem;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Precio */
+.card-text {
+  color: #28a745;
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+/* Botón agregar */
+.card .btn {
+  background-color: #007BFF;
+  border: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.card .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Carrito */
+#carrito {
+  margin-top: 30px;
+}
+
+#carrito .list-group-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+}
+
+#total {
+  font-weight: bold;
+  color: #dfee0b;
+  
+}
+.text-right {
+  font-weight: bold;
+  color: #dfee0b;
+
+}
+/* Botón vaciar */
+#boton-vaciar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+#boton-vaciar:hover {
+  background-color: #c82333;
+}
