@@ -702,7 +702,7 @@ body{
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(223, 218, 218, 0.1);
   overflow: hidden;
   transition: transform 0.2s;
 }
@@ -742,17 +742,17 @@ body{
 }
 
 /* Carrito */
-#carrito {
+.carrito {
   margin-top: 30px;
 }
 
-#carrito .list-group-item {
+.carrito .list-group-item {
   background-color: #fff;
   border: 1px solid #ddd;
   margin-bottom: 5px;
 }
 
-#total {
+.total {
   font-weight: bold;
   color: #dfee0b;
   
@@ -763,7 +763,7 @@ body{
 
 }
 /* Botón vaciar */
-#boton-vaciar {
+.boton-vaciar {
   background-color: #dc3545;
   color: white;
   border: none;
@@ -772,6 +772,6 @@ body{
   border-radius: 6px;
 }
 
-#boton-vaciar:hover {
+.boton-vaciar:hover {
   background-color: #c82333;
 }
